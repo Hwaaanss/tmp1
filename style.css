@@ -1,1 +1,88 @@
-/* Add styles here */
+body {
+    font-family: 'Nanum Gothic', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움', sans-serif;
+    background-color: #f0f2f5;
+    background-image: subtle-pattern.png;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39tbW1+fn5ubm5gYGBjY2NxcXFiYmJqampnZ2dmZmZlZWVmZmZ+3e3FAAAA/klEQVR4nO2P2w6DMAwFwQJA/dT62/2/j2AIAU5MDQN+Z+g18D4hSp8u9t5N/sS+ejH87lbe59Xn2s/Yo/yh2wB428e3u9nI/9479b+4f2vG//AP/QcAAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADYDeJb/vQAAAAAANgN4lv+9AAAAAADg/wCVQ3wAcl8fkwAAAABJRU5ErkJggg==');
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.lotto-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+lotto-ball {
+    transition: transform 0.3s ease-in-out;
+}
+
+lotto-ball:hover {
+    transform: translateY(-5px);
+}
+
+.glowing-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+.glowing-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 20px rgba(41, 128, 185, 0.6);
+    transform: translateY(-2px);
+}
+
+.glowing-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(41, 128, 185, 0.4);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .lotto-numbers {
+        gap: 10px;
+    }
+
+    .glowing-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
